@@ -16,6 +16,8 @@ body {
     min-height: 100vh;
     position: relative;
     padding-top: 60px; /* 为固定导航栏留出空间 */
+    cursor: url('cursors/aero.cur') 0 0, auto;
+    cursor: image-set(url('cursors/aero.cur') 1x, url('cursors/aero.cur') 2x) 0 0, auto;
 }
 
 /* 自定义背景图片 */
@@ -90,6 +92,8 @@ body::before {
     position: relative;
     padding: 5px 0;
     transition: color 0.2s ease;
+    cursor: url('cursors/link.cur') 0 0, pointer;
+    cursor: image-set(url('cursors/link.cur') 1x, url('cursors/link.cur') 2x) 0 0, pointer;
 }
 
 .nav-link::after {
@@ -116,7 +120,8 @@ body::before {
     display: none;
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: url('cursors/link.cur') 0 0, pointer;
+    cursor: image-set(url('cursors/link.cur') 1x, url('cursors/link.cur') 2x) 0 0, pointer;
     padding: 5px;
     flex-direction: column;
     gap: 4px;
@@ -150,6 +155,8 @@ body::before {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
     transition: color 0.2s ease;
+    cursor: url('cursors/link.cur') 0 0, pointer;
+    cursor: image-set(url('cursors/link.cur') 1x, url('cursors/link.cur') 2x) 0 0, pointer;
 }
 
 .mobile-nav-link:last-child {
@@ -271,6 +278,8 @@ body::before {
     transition: all 0.2s ease;
     border: 2px solid #0F6DE6;
     margin-bottom: 15px;
+    cursor: url('cursors/link.cur') 0 0, pointer;
+    cursor: image-set(url('cursors/link.cur') 1x, url('cursors/link.cur') 2x) 0 0, pointer;
 }
 
 .download-btn:hover {
@@ -381,6 +390,8 @@ h4 {
     border-bottom: 1px solid #eee;
     transition: all 0.2s ease;
     position: relative;
+    cursor: url('cursors/link.cur') 0 0, pointer;
+    cursor: image-set(url('cursors/link.cur') 1x, url('cursors/link.cur') 2x) 0 0, pointer;
 }
 
 .quick-links a::after {
