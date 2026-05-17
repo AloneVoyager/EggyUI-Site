@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
             note.textContent = '⚠️ EggyUI-RE 目前处于开发阶段，安装包尚未发布。请关注项目更新或加入QQ群获取最新信息。';
             */
 
-            if (confirm("EggyUI-RE 目前处于开发阶段，安装包尚未发布。是否访问 EggyUI-RE 仓库？")) {
-                window.open("https://github.com/CN-RBL/EggyUI-RE", "_blank");
+            if (confirm("EggyUI-RE 目前处于开发阶段，安装包尚未发布。是否下载 EggyUI-Legacy？")) {
+                window.open("https://eggyreshub.wordpress.com/2026/05/16/eggy-ui/", "_blank");
             }
             
             // 移除可能已存在的提示
