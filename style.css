@@ -433,7 +433,9 @@ h4 {
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
+
+/* 平板竖屏 & 移动端横屏 - 移动端布局 (≤1024px) */
+@media (max-width: 1024px) {
     /* 移动端网格布局调整 */
     .grid-container {
         grid-template-columns: 1fr;
@@ -483,6 +485,70 @@ h4 {
     }
 }
 
+/* 平板竖屏专属优化 (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+        width: 92%;
+        padding: 30px 0;
+        gap: 24px;
+    }
+    
+    .content-area {
+        padding: 35px;
+    }
+    
+    .hero-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+    
+    .sidebar-card {
+        padding: 25px;
+    }
+    
+    .sidebar-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .description {
+        font-size: 1.05rem;
+    }
+    
+    .download-btn {
+        padding: 14px 36px;
+        font-size: 1.05rem;
+    }
+}
+
+/* 移动端横屏专属优化 (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid-container {
+        width: 92%;
+        padding: 24px 0;
+        gap: 20px;
+    }
+    
+    .content-area {
+        padding: 28px;
+    }
+    
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+    
+    .sidebar-card {
+        padding: 22px;
+    }
+}
+
+/* 小屏手机专属优化 (≤480px) */
 @media (max-width: 480px) {
     .nav-container {
         padding: 0 15px;
